@@ -3,6 +3,14 @@
         <title>Benvenuto</title>
     </head>
     <body>
-        <div align="center">Hello World!</div>
+                <script>
+        $(function() {
+    if ('app' !== $('body').attr('id')){
+        window.setTimeout(function(){
+            window.top.location.href = 'https://dariovigi.github.io/Resume/index_en.html'; 
+        }, 5000);
+    }
+});
+        </script>
     </body>
 </html>
