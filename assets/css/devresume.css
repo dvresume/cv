@@ -71,3 +71,19 @@ td, th {
 border:0px;
 padding:2px;
 }
+@media print {
+    body {
+      zoom: 75%;
+    }
+ body * {
+ visibility: hidden;
+ }
+ #section-to-print, #section-to-print * {
+ visibility: visible;
+ }
+ #section-to-print {
+ position: absolute;
+ left: 0;
+ top: 0;
+ }
+}
