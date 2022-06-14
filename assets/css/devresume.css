@@ -87,5 +87,5 @@ padding:2px;
  top: 0;
  }
 }
-.split-para      { display:block;text-allign:left;margin:5px;}
+.split-para      { display:block;margin:5px;}
 .split-para span { display:block;text-allign:right;float:right;width:30%;margin:5px;}
