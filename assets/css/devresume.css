@@ -73,7 +73,9 @@ padding:2px;
 }
 @media print {
     body {
-      zoom: 75%;
+zoom: 50%
+width: 210mm;
+/*height: 297mm;*/
     }
  body * {
  visibility: hidden;
@@ -83,7 +85,35 @@ padding:2px;
  }
  #section-to-print {
  position: absolute;
+
  left: 0;
  top: 0;
  }
 }
+
+/* Carousel dark indicators */
+/* Add an extra .carousel parent class to increase specifity
+   avoiding the use of !important flag. */
+.carousel .carousel-indicators li {
+  background-color: #fff;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #fff;
+}
+
+.carousel .carousel-caption{
+    text-shadow: 3px 3px 4px black, 0 0 25px black;
+}
+
+/* Only for beautify example */
+h1 {
+  margin: 60px auto;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
