@@ -76,6 +76,7 @@ padding:2px;
 zoom: 75%
 /*width: 210mm;*/
 /*height: 297mm;*/
+
     }
  body * {
  visibility: hidden;
@@ -118,3 +119,18 @@ img {
   width: 100%;
 }
 
+
+[lang=it] {
+  display: none;
+}
+
+[lang=pt] {
+  display: none;
+}
+
+
+/*[lang=en] {*/
+/*  display: unset;*/
+/*}*/
+
+/*localize(window.navigator.language);*/

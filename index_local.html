@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title lang="en">Resume • Dario Vigilante</title>
+        <title lang="it">Curriculum • Dario Vigilante</title>
+        <title lang="pt">Currículo • Dario Vigilante</title>
+        
+        <!-- Meta -->
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta name="description" content="">
+                        <meta name="author" content="Dario Vigilante">
+                            <link rel="shortcut icon" href="favicon.ico">
+                                
+                                <!-- Google Fonts -->
+                            <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+                                    
+                                <!-- FontAwesome JS-->
+                            <script defer src="assets/fontawesome/js/all.min.js"></script>
+                                    
+                                <!-- Theme CSS -->
+                            <link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
+                                        
+                                <!-- Collapsible -->
+                            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+                                            
+    </head>
+    
+    <body>
+        <div class="resume-footer text-center">
+            <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+                <li onclick="window.print()" class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="#"><i class="fa-2x me-2" data-fa-transform="down-4"></i>
+                    <span class="d-none d-lg-inline-block text-muted" lang="en">Print Resume</span>
+<!--                    <span class="d-none d-lg-inline-block text-muted" lang="it">Stampa Curriculum</span>-->
+<!--                    <span class="d-none d-lg-inline-block text-muted" lang="pt">Imprimir Currículo</span>-->
+                </a></li>
+                <li class="list-inline-item mb-lg-0 me-lg-3">
+                    <span lang="en" class="d-none d-lg-inline-block text-muted">Show resume in &nbsp;</span>
+<!--                    <span lang="it" class="d-none d-lg-inline-block text-muted">Mostra il curriculum in &nbsp;</span>-->
+<!--                    <span lang="pt" class="d-none d-lg-inline-block text-muted">Mostrar curriculo em &nbsp;</span>-->
+                    <select onchange="select_language(this.options[this.selectedIndex].value)">
+                    <option value="en">English</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                  </select></a></li>
+            </ul>
+        </div><!--//resume-footer-->
+        
+        <div class="main-wrapper print">
+            <div class="container px-3 px-lg-5">
+                
+                <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+                    <div class="container" id="section-to-print" >
+                        
+                        <div class="resume-header">
+                            <div class="row align-items-center">
+                                <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+                                    <h2 class="resume-name mb-0 text-uppercase">Dario Vigilante</h2>
+                                    <div class="resume-tagline mb-3 mb-md-0" lang="en">Student ∙ Developer</div>
+                                    <div class="resume-tagline mb-3 mb-md-0" lang="it">Studente ∙ Sviluppatore</div>
+                                    <div class="resume-tagline mb-3 mb-md-0" lang="pt">Estudante ∙ Desenvolvedor</div>
+                                </div><!--//resume-title-->
+                                <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i><a class="resume-link" href="tel:#">+39 3396456131</a></li>
+                                        <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="resume-link" href="mailto:#">dario.vig@gmail.com</a></li>
+                                        <li class="mb-2"><i class="fas fa-globe fa-fw fa-lg me-2"></i><a class="resume-link" href="https://dariovigilante.it">www.dariovigilante.it</a></li>
+                                        <li class="mb-0" lang="en"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Naples, Italy</li>
+                                        <li class="mb-0" lang="it"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Napoli, Italia</li>
+                                        <li class="mb-0" lang="pt"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Nápoles, Itália</li>
+                                    </ul>
+                                </div><!--//resume-contact-->
+                            </div><!--//row-->
+                            
+                        </div><!--//resume-header-->
+                        <hr>
+                        <div class="resume-intro py-3">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-3 col-xl-2 text-center">
+                                    <img class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded-circle mx-auto" src="assets/images/resume-profile.png" alt="image">
+                                </div>
+                                
+                                <div class="col text-start">
+                                    <p class="mb-0" lang="en">Hi I'm Dario Vigilante,
+                                    a student at Federico II of Naples graduating in Engineering-Architecture and employee at Municipality of Naples with a solid passion in Technology and Computer science who recently started the Developer path.  I would just define myself as a curious  and open-minded guy passionated about different subjects and cultures with a craving desire to learn new things.
+                                    If you are looking for a person who has no problem working in a multicultural team, loves to study and stay up to date, really into analyzing problems and always in search for possible solutions, I'm the person you want in your team.<br>
+
+                                    <p class="mb-0" lang="it">Ciao sono Dario Vigilante, uno studente laureando in Ingegneria-Architettura presso la Federico II di Napoli e dipendente del Comune di Napoli con una grande passione per la Tecnologia e l'Informatica che da poco ha iniziato il percorso di Sviluppatore. Mi definirei semplicemente un ragazzo curioso e dalla mentalità aperta, appassionato di materie e culture diverse con una grande voglia di imparare cose nuove. Se siete alla ricerca di una persona che non abbia problemi a lavorare in un team multiculturale, ami studiare e tenersi aggiornato, interessato dall'analisi dei problemi e sempre alla ricerca di possibili soluzioni, sono la persona che desiderate nel vostro team.<br>
+
+                                    <p class="mb-0" lang="pt">Olá sou Dario Vigilante, um estudante de Engenharia-Arquitetura a estudar atualmente na Federico II de Nápoles e a trabalhar no município de Nápoles com uma sólida paixão em Tecnologia e Ciência da Computação que recentemente iniciou o caminho de Desenvolvedor. Eu apenas me definiria como um rapaz curioso e com mente aberta, apaixonado por diferentes assuntos e culturas com um forte desejo de aprender coisas novas. Se estão à procura de uma pessoa sem problemas em trabalhar numa equipa multicultural,que goste de estudar e se manter atualizado, realmente focado em analisar problemas e sempre em busca de possíveis soluções, eu sou a pessoa que procuram.<br>
+                                    
+                                </div><!--//col-->
+                            </div>
+                        </div><!--//resume-intro-->
+                        <hr>
+                        <div class="resume-body">
+                            <div class="row">
+                                <div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
+                                    <section class="work-section py-3">
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="en">Work Experiences</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="it">Esperienze lavorative</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="pt">Experiências de trabalho</h3>
+                                        
+                                        <div class="item mb-3">
+                                            <div class="item-heading row align-items-center mb-2">
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="en">Administrative employee at Municipality of Naples</h4>
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="it">Istruttore amministrativo presso Comune di Napoli</h4>
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="pt">Empregado administrativo no Município de Nápoles</h4>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="en">December 2021 - Present<br>Naples, Italy</div>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="it">Dicembre 2021 - Presente<br>Napoli, Italia</div>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="pt">Dezembro de 2021 - Atual<br>Nápoles, Itália</div>
+                                            </div>
+                                            <div class="item-content">
+                                                <input type="checkbox" id="title" />
+                                                <label for="title">
+                                                    <p lang="en">Administrative instructor at Budget and Accounting office - Area of revenue, Municipality of Naples</p>
+                                                    <p lang="it">Istruttore amministrativo presso Ufficio Bilancio e Contabilità - Area Entrate, Comune di Napoli</p>
+                                                    <p lang="pt">Instrutor administrativo no escritório de Orçamento e Contabilidade - Área de receita, Município de Nápoles</p>
+                                                </label>
+                                                <div class="content">
+                                                    <ul class="resume-list">
+                                                        <li lang="en">Drafting of administrative acts: Collection Orders, Liquidation Proceeding.</li>
+                                                        <li lang="en">Collection orders for payments made by bank transfers or cash.</li>
+                                                        <li lang="en">Management, updating and backup of the authority database.</li>
+                                                        <li lang="en">Management and backup of authority certified mail boxes.</li>
+                                                        <li lang="en">MEPA platform award procedures (Electronic Market for public administration).</li>
+                                                        
+                                                        <li lang="it">Redazione atti amministrativi vari: Ordinativi d'incasso, Atti di liquidazione.</li>
+                                                        <li lang="it">Ordinativi di incasso per pagamenti effettuati tramite bonifici o contanti.</li>
+                                                        <li lang="it">Gestione, aggiornamento e backup del database dell'ente.</li>
+                                                        <li lang="it">Gestione e backup di caselle di posta certificata dell'ente.</li>
+                                                        <li lang="it">Procedure di aggiudicazione su piattaforma MEPA (Mercato Elettronico della Pubblica Amministrazione).</li>
+                                                        
+                                                        <li lang="pt">Elaboração de atos administrativos: Ordens de Cobrança, Processo de Liquidação.</li>
+                                                        <li lang="pt">Ordens de cobrança para pagamentos efectuados por transferência bancária ou numerário.</li>
+                                                        <li lang="pt">Gestão, atualização e backup do banco de dados de autoridades.</li>
+                                                        <li lang="pt">Gestão e backup de caixas de correio certificadas por autoridade.</li>
+                                                        <li lang="pt">Procedimentos de adjudicação da plataforma MEPA (Mercado Electrónico para a Administração Pública).</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!--//item-->
+                                        
+                                    </section><!--//work-section-->
+                                    
+                                    <section class="work-section py-3">
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="en">Other Experiences</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="it">Altre esperienze</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="pt">Outras experiências</h3>
+                                        <div class="item mb-3">
+                                            
+                                            <div class="item mb-3" lang="en">
+                                                <div class="item-heading row align-items-center mb-2">
+                                                    <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="en">Workshop: Moovit University Program</h4>
+                                                    <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="it">Workshop: Moovit University Program</h4>
+                                                    <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="pt">Workshop: Programa Universitário Moovit</h4>
+                                                    <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="en">November 2018 - January 2019<br>TeMALab Naples, Italy</div>
+                                                    <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="it">Novembre 2018 - Gennaio 2019<br>TeMALab Napoli, Italia</div>
+                                                    <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="pt">Novembro de 2018 - Janeiro de 2019<br>TeMALab Nápoles, Itália</div>
+                                                </div>
+                                                <div class="item-content">
+                                                    <input type="checkbox" id="ws-moovit_en" />
+                                                    <label for="ws-moovit_en">
+                                                        <p lang="en">Moovit project for mapping the local public transport network in Campania. </p>
+                                                        <p lang="it">Progetto Moovit per la mappatura della rete di trasporto pubblico locale in Campania</p>
+                                                        <p lang="pt">Projeto Moovit para mapeamento da rede de transporte público local na região Campânia. </p>
+                                                    </label>
+                                                    <div class="content">
+                                                        <p lang"en">Workshop organized by Moovit in collaboration with TeMALab,
+                                                        Territory, Mobility and Environment Laboratory and the Department of Civil, Construction and Environmental Engineering of Federico II University for mapping the local public transport networks in Campania region.</p>
+                                                        <p lang="it">Workshop organizzato da Moovit in collaborazione con TeMALab, Laboratorio Territorio Mobilità e Ambiente e Dipartimento di Ingegneria Civile, Edile e Ambientale dell'Università Federico II per la mappatura delle reti di trasporto pubblico locale in Campania.</p>
+                                                        <p lang="pt">Workshop organizado pelo Moovit em colaboração com o TeMALab, Laboratório de Território, Mobilidade e Ambiente e o Departamento de Engenharia Civil, Construção e Ambiente da Universidade Federico II para o mapeamento das redes locais de transporte público na região da Campânia.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!--//item-->
+                                            
+                                            <div class="item mb-3">
+                                                <div class="item-heading row align-items-center mb-2">
+                                                    <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="en">Workshop: Architecture and Landscape of City Centers</h4>
+                                                    <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="it">Workshop: Architettura e Paesaggio dei centri urbani</h4>
+                                                    <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="pt">Workshop: Arquitetura e Paisagismo dos Centros das Cidades</h4>
+                                                    <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="en">May 2018<br>Municipality of Nola, Italy</div>
+                                                    <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="it">Maggio 2018<br>Comune di Nola, Italia</div>
+                                                    <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="pt">Maio de 2018<br>Município de Nola, Itália</div>
+                                                </div>
+                                                <div class="item-content">
+                                                    <input type="checkbox" id="ws-amphi_en" />
+                                                    <label for="ws-amphi_en">
+                                                        <p lang="en">Design competition "The Brickwork Amphitheater" at the Municipality of Nola.</p>
+                                                        <p lang="it">Concorso di progettazione "L'Anfiteatro Laterizio" presso il Comune di Nola.</p>
+                                                        <p lang="pt">Concurso de design "O Anfiteatro de Alvenaria" no Município de Nola.</p>
+                                                    </label>
+                                                    <div class="content">
+                                                        <p lang="en">Workshop organized by the Municipality of Nola from 28 to 31 May, with presentation
+                                                        of design proposals for the redevelopment of the Roman amphitheater and the area surrounding the "Foro Boario".</p>
+                                                        <p lang="it">Workshop organizzato dal Comune di Nola dal 28 al 31 maggio, con presentazione di proposte progettuali per la riqualificazione dell'anfiteatro Romano e dell'area circostante il "Foro Boario".</p>
+                                                        <p lang="pt">Workshop organizado pela Câmara Municipal de Nola de 28 a 31 de maio, com apresentação de propostas de projeto para a requalificação do anfiteatro Romano e da área envolvente ao "Foro Boario".</p>
+                                                    </div>
+                                                </div>
+                                            </div><!--//item-->
+                                            
+                                    </section><!--//work-section-->
+                                    
+                                    
+                                    
+                                    <section class="project-section py-3">
+                                        <h3 class="text-uppercase resume-section-heading mb-4">Projects</h3>
+                                        
+                                        <div class="item mb-3" lang="en">
+                                            <div class="item-heading row align-items-center mb-2">
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">TruSteppy</h4>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="en">April 2022 - June 2022</div>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="it">Aprile 2022 - Giugno 2022</div>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="pt">Abril de 2022 - Junho de 2022</div>
+                                            </div>
+                                            <div class="item-content">
+                                                <input type="checkbox" id="prj1n" />
+                                                <label for="prj1">
+                                                    <p lang="en">iOS Application using the truedepth camera for 3D scanning of the environment to help blind and visually impaired to identify obstacles. </p>
+                                                    <p lang="it">Applicazione iOS che utilizza la fotocamera Truedepth per la scansione 3D dell'ambiente per aiutare non vedenti e ipovedenti a identificare gli ostacoli.</p>
+                                                    <p lang="pt">Aplicativo iOS usando a câmera truedepth do iPhone para a digitalização 3D do ambiente para ajudar invisuais e parcialmente invisuais a identificar obstáculos.</p>
+                                                </label>
+                                                <div class="content">
+                                                    <ul class="resume-list">
+                                                        <li lang="en">App realized during MC-Final Challenge at Apple Developer Academy, using the iPhone's truedepth camera for 3D scanning of the environment to help blind and visually impaired to identify obstacles, giving them an extra-tool to walk autonomously.</li>
+                                                        <li lang="it">App realizzata durante l'MC-Final Challenge presso l'Apple Developer Academy che utilizza la fotocamera Truedepth dell'iPhone per la scansione 3D dell'ambiente per aiutare non vedenti e ipovedenti a identificare gli ostacoli, fornendo loro uno strumento in più per camminare autonomamente.</li>
+                                                        <li lang="pt">Aplicativo realizado durante a Challenge final na Apple Developer Academy, usando a câmera truedepth do iPhone para a digitalização 3D do ambiente para ajudar invisuais e parcialmente invisuais a identificar obstáculos, dando-lhes uma ferramenta extra para caminhar de forma autónoma.</li>
+                                                        <br>
+                                                        <div id="carousel-1" class="carousel slide" data-ride="false" data-interval="5000">
+                                                            <!-- Indicators -->
+                                                            <ol class="carousel-indicators">
+                                                                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                                                <li data-target="#carousel-1" data-slide-to="1"></li>
+                                                                <li data-target="#carousel-1" data-slide-to="2"></li>
+                                                            </ol>
+                                                            <!-- Wrapper for slides -->
+                                                            <div class="carousel-inner" role="listbox">
+                                                                <div class="item active"><img class="d-block w-100" src="files/TruSteppy.png" alt="First slide"></div>
+                                                                <div class="item"><img  class="d-block w-100" src="files/TruSteppy_1.png" alt="Second slide"></div>
+                                                                <div class="item"><img class="d-block w-100" src="files/TruSteppy_2.png" alt="Third slide"></div>
+                                                            </div>
+                                                            <!-- Controls -->
+                                                            <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+                                                            <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!--//item-->
+                                        
+                                        <div class="item">
+                                            <div class="item-heading row align-items-center mb-2">
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Pictopia</h4>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="en">January 2022 - March 2022</div>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="it">Gennaio 2022 - Marzo 2022</div>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="pt">Janeiro de 2022 - Março de 2022</div>
+                                            </div>
+                                            <div class="item-content">
+                                                <input type="checkbox" id="prj2" />
+                                                <label for="prj2">
+                                                    <p lang="en">iOS Application that pushes aspiring photographers to learn new photography techniques and basic photography skills through daily-fresh challenges.</p>
+                                                    <p lang="it">Applicazione iOS che spinge gli aspiranti fotografi ad apprendere nuove tecniche fotografiche e le basi della fotografia con sfide quotidiane</p>
+                                                    <p lang="pt">Aplicativo para iOS que incentiva aspirantes a fotógrafos a aprender novas técnicas de fotografia e habilidades básicas de fotografia em desafios diários.</p></label>
+                                                    
+                                                </label>
+                                                <div class="content">
+                                                    <ul class="resume-list">
+                                                        <li lang="en">App realized during MC2-MC3-Callenges at Apple Developer Academy to help beginner photographers to achieve their goals by exploring new methods and techniques about the world of photography, discovering courses and diving into exciting challenges.</li>
+                                                        <li lang="it">App realizzata durante le Challenge MC2 ed MC3 presso l'Apple Developer Academy per aiutare i fotografi principianti a raggiungere i loro obiettivi e ad esplorare il mondo della fotografia, scoprendo nuove tecniche e tuffandosi in sfide entusiasmanti.</li>
+                                                        <li lang="pt">App realizado durante as Challenges MC2-MC3 na Apple Developer Academy para ajudar fotógrafos iniciantes a atingir seus objetivos explorando novos métodos e técnicas sobre o mundo da fotografia, descobrindo cursos e mergulhando em desafios emocionantes.</li>
+                                                        <br>
+                                                        <div id="carousel-2" class="carousel slide" data-ride="false" data-interval="5000">
+                                                            <!-- Indicators -->
+                                                            <ol class="carousel-indicators">
+                                                                <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+                                                                <li data-target="#carousel-2" data-slide-to="1"></li>
+                                                                <li data-target="#carousel-2" data-slide-to="2"></li>
+                                                            </ol>
+                                                            <!-- Wrapper for slides -->
+                                                            <div class="carousel-inner" role="listbox">
+                                                                <div class="item active">
+                                                                    <img class="d-block w-100" src="files/Pictopia.png" alt="First slide">
+                                                                </div>
+                                                                
+                                                                <div class="item"><img  class="d-block w-100" src="files/Pictopia_1.png" alt="Second slide"></div>
+                                                                <div class="item"><img class="d-block w-100" src="files/Pictopia_2.png" alt="Third slide">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <!-- Controls -->
+                                                            <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
+                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+                                                            
+                                                            <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
+                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div><!--//item-->
+                                        <div class="item">
+                                            <div class="item-heading row align-items-center mb-2">
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">iTalktoYou</h4>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="en">October 2021 - November 2021</div>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="it">Ottobre 2021 - Novembre 2021</div>
+                                                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="pt">Outubro de 2021 - Novembro de 2021</div>
+                                                
+                                                
+                                            </div>
+                                            <div class="item-content">
+                                                <input type="checkbox" id="prj3" />
+                                                <label for="prj3">
+                                                    <p lang="en">iOS Application to help children with autism or communication diseases to communicate their own feelings and necessities by using a specific tool based on PECS method.</p>
+                                                    <p lang="it">Applicazione iOS per aiutare i bambini con autismo o disturbi della comunicazione ad esprimere i propri sentimenti e necessità utilizzando uno strumento specifico basato sul metodo PECS</p>
+                                                    <p lang="pt">Aplicativo iOS para ajudar crianças com autismo ou doenças da comunicação a comunicar seus próprios sentimentos e necessidades usando uma ferramenta específica baseada no método PECS.</p>
+                                                </label>
+                                                <div class="content">
+                                                    <ul class="resume-list">
+                                                        <li lang="en">App realized during MC1-Callenge at Apple Developer Academy that provides a way for students with autism or communication diseases to be able to understand or express their own feelings and necessities by using a specific tool based on the Picture Exchange Communication System (PECS), an augmentative and alternative communication (AAC) system that uses visual symbols to teach the learner to communicate with other individuals.</li>
+                                                        <li lang="it">App realizzata durante la Challenge MC1 presso l'Apple Developer Academy che offre agli studenti con autismo o disturbi della comunicazione un modo per comprendere o esprimere i propri sentimenti e necessità utilizzando uno strumento specifico basato sul Picture Exchange Communication System (PECS), un Sistema di comunicazione aumentativa e alternativa (CAA) che utilizza simboli visivi per insegnare allo studente a comunicare con altri individui.</li>
+                                                        <li lang="pt">App realizado durante a Challenge MC1 na Apple Developer Academy que oferece aos alunos com autismo ou doenças da comunicação uma forma de entender ou expressar seus próprios sentimentos e necessidades usando uma ferramenta específica baseada no Picture Exchange Communication System (PECS), um Sistema de comunicação aumentativa e alternativa (AAC) que usa símbolos visuais para ensinar o aluno a se comunicar com outros indivíduos.</li>
+                                                        <br>
+                                                        <div id="carousel-3" class="carousel slide" data-ride="false" data-interval="5000">
+                                                            <!-- Indicators -->
+                                                            <ol class="carousel-indicators">
+                                                                <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
+                                                                <li data-target="#carousel-3" data-slide-to="1"></li>
+                                                                <li data-target="#carousel-3" data-slide-to="2"></li>
+                                                                <li data-target="#carousel-3" data-slide-to="3"></li>
+                                                                <li data-target="#carousel-3" data-slide-to="4"></li>
+                                                                <li data-target="#carousel-3" data-slide-to="5"></li>
+                                                            </ol>
+                                                            <!-- Wrapper for slides -->
+                                                            <div class="carousel-inner" role="listbox">
+                                                                <div class="item active"><img class="d-block w-100" src="files/iTalktoYou.png" alt="First slide"></div>
+                                                                <div class="item"><img  class="d-block w-100" src="files/iTalktoYou_1.png" alt="Second slide"></div>
+                                                                <div class="item"><img class="d-block w-100" src="files/iTalktoYou_2.png" alt="Third slide"></div>
+                                                                <div class="item"><img  class="d-block w-100" src="files/iTalktoYou_3.png" alt="Fourth slide"></div>
+                                                                <div class="item"><img  class="d-block w-100" src="files/iTalktoYou_4.png" alt="Fifth slide"></div>
+                                                                <div class="item"><img  class="d-block w-100" src="files/iTalktoYou_5.png" alt="Sixth slide"><div class="carousel-caption"><p>Foto del team.</p></div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Controls -->
+                                                            <a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev">
+                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+                                                            <a class="carousel-control-next" href="#carousel-3" role="button" data-slide="next">
+                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div><!--//item-->
+                                        
+                                    </section><!--//project-section-->
+                                    
+                                    
+                                    <section class="education-section py-3">
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="en">Education</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="it">Educazione</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="pt">Education</h3>
+                                        <ul class="list-unstyled resume-education-list">
+                                            
+                                            <li class="mb-3">
+                                                <input type="checkbox" id="edu-uni" />
+                                                <label for="edu-uni">
+                                                    <div class="resume-degree font-weight-bold">Near-graduate student in Building Engineering-Architecture </div>
+                                                </label>
+                                                <div class="content">
+                                                    <p class="text-muted">
+                                                    Exams taken:
+                                                    </p>
+                                                    <p><ul class="text-muted">
+                                                        <li lang="en">Architectural restoration 30 e lode/30 </li>
+                                                        <li lang="en">Economy and valuation in civil engineering 24/30</li>
+                                                        <li lang="en">Foundations 27/30</li>
+                                                        <li lang="en">Law and Anthropology 29/30 </li>
+                                                        <li lang="en">Hydraulic constructions 28/30 </li>
+                                                        <li lang="en">Construction technique 30/30 </li>
+                                                        <li lang="en">Construction science 28/30 </li>
+                                                        <li lang="en">Organization of the construction site 27/30 </li>
+                                                        <li lang="en">Infrastructure architecture 30 e lode/30 </li>
+                                                        <li lang="en">Architecture and architectural composition III 28/30 </li>
+                                                        <li lang="en">Architecture and architectural composition I 30/30 </li>
+                                                        <li lang="en">Technical architecture II 26/30 </li>
+                                                        <li lang="en">Technical architecture I 28/30 </li>
+                                                        <li lang="en">Territorial governance tools 30/30 </li>
+                                                        <li lang="en">Urban planning technique II 27/30 </li>
+                                                        <li lang="en">Urban planning technique I 28/30 </li>
+                                                        <li lang="en">History of architecture II 30/30 </li>
+                                                        <li lang="en">History of architecture I 28/30 </li>
+                                                        <li lang="en">Architectural design III 28/30 </li>
+                                                        <li lang="en">Architectural design I 27/30 </li>
+                                                        <li lang="en">Mathematical analysis II 25/30 </li>
+                                                        <li lang="en">Mathematical analysis I 27/30 </li>
+                                                        <li lang="en">General physics 27/30 </li>
+                                                        <li lang="en">Geometry 28/30 </li>
+                                                        <li lang="en">Materials technology and applied chemistry 28/30 </li>
+                                                        
+                                                        <li lang="it">Restauro architettonico 30 e lode/30</li>
+                                                        <li lang="it">Economia ed estimo civile 24/30</li>
+                                                        <li lang="it">Fondazioni 27/30</li>
+                                                        <li lang="it">Diritto e Antropologia 29/30</li>
+                                                        <li lang="it">Costruzioni idrauliche 28/30</li>
+                                                        <li lang="it">Tecnica delle costruzioni 30/30</li>
+                                                        <li lang="it">Scienza delle costruzioni 28/30</li>
+                                                        <li lang="it">Organizzazione del cantiere 27/30</li>
+                                                        <li lang="it">Architettura delle infrastrutture 30 e lode/30</li>
+                                                        <li lang="it">Architettura e composizione architettonica III 28/30</li>
+                                                        <li lang="it">Architettura e composizione architettonica I 30/30</li>
+                                                        <li lang="it">Architettura tecnica II 26/30</li>
+                                                        <li lang="it">Architettura tecnica I 28/30</li>
+                                                        <li lang="it">Strumenti di governo del territorio 30/30</li>
+                                                        <li lang="it">Tecnica urbanistica II 27/30</li>
+                                                        <li lang="it">Tecnica urbanistica I 28/30</li>
+                                                        <li lang="it">Storia dell'architettura II 30/30</li>
+                                                        <li lang="it">Storia dell'architettura I 28/30</li>
+                                                        <li lang="it">Disegno dell'architettura III 28/30</li>
+                                                        <li lang="it">Disegno dell'architettura I 27/30</li>
+                                                        <li lang="it">Analisi matematica II 25/30</li>
+                                                        <li lang="it">Analisi matematica I 27/30</li>
+                                                        <li lang="it">Fisica generale 27/30</li>
+                                                        <li lang="it">Geometria 28/30</li>
+                                                        <li lang="it">Tecnologia dei materiali e chimica applicata 28/30</li>
+                                                        
+                                                        <li lang="pt">Valorização económica e civil 24/30</li>
+                                                        <li lang="pt">Fundações 27/30</li>
+                                                        <li lang="pt">Direito e Antropologia 29/30</li>
+                                                        <li lang="pt">Construções hidráulicas 28/30</li>
+                                                        <li lang="pt">Técnica de construção 30/30</li>
+                                                        <li lang="pt">Ciência da Construção 28/30</li>
+                                                        <li lang="pt">Organização do canteiro de obras  27/30</li>
+                                                        <li lang="pt">Arquitetura de infraestrutura  30 cum laude/30</li>
+                                                        <li lang="pt">Arquitetura e composição arquitetónica III /30</li>
+                                                        <li lang="pt">Arquitetura e composição arquitetónica I 30/30</li>
+                                                        <li lang="pt">Arquitetura técnica  II 26/30</li>
+                                                        <li lang="pt">Arquitetura técnica I 28/30</li>
+                                                        <li lang="pt">Ferramentas de ordenamento do território 30/30</li>
+                                                        <li lang="pt">Técnica de planejamento urbano II 27/30</li>
+                                                        <li lang="pt">Técnica de planejamento urbano I 28/30</li>
+                                                        <li lang="pt">História da arquitetura II 30/30</li>
+                                                        <li lang="pt">História da arquitetura I 28/30</li>
+                                                        <li lang="pt">Desenho arquitetónico III 28/30</li>
+                                                        <li lang="pt">Desenho arquitetónico I 27/30</li>
+                                                        <li lang="pt">Análise matemática II 25/30</li>
+                                                        <li lang="pt">Análise matemática I 27/30</li>
+                                                        <li lang="pt">Física geral 27/30</li>
+                                                        <li lang="pt">Geometria 28/30</li>
+                                                        <li lang="pt">Tecnologia de materiais e química aplicada 28/30</li>
+                                                        
+                                                    </ul></p>
+                                                    <p class="text-muted" lang="en">Remaining:</p>
+                                                    <p class="text-muted" lang="en">Ancora da sostenere:</p>
+                                                    <p class="text-muted" lang="en">Ainda a ser suportado:</p>
+                                                    
+                                                    <ul class="text-muted">
+                                                        <li lang="en">Technical and environmental physics</li>
+                                                        <li lang="it">Fisica tecnica ed ambientale</li>
+                                                        <li lang="pt">Física técnica e ambiental</li>
+                                                    </ul>
+                                                    <br>
+                                                </div>
+                                                <div class="resume-degree-org text-muted" lang="en">Polytechnic School Federico II University of Naples, Italy</div>
+                                                <div class="resume-degree-org text-muted">Scuola Politecnica e delle scienze di base - Università Federico II di Napoli, Italia</div>
+                                                
+                                                <div class="resume-degree-time text-muted" lang="en">Present</div>
+                                            </li>
+                                            
+                                            <li class="mb-3">
+                                                <div class="resume-degree font-weight-bold" lang="en">Apple Developer Academy - Development and Design for applications and digital services </div>
+                                                <div class="resume-degree-org text-muted" lang="en">Apple Developer Academy of Naples, Italy</div>
+                                                <div class="resume-degree-time text-muted" lang="en">September 2021 - June 2022</div>
+                                            </li>
+                                            
+                                            <li class="mb-3">
+                                                <input type="checkbox" id="edu-era" />
+                                                <label for="edu-era">
+                                                    <div class="resume-degree font-weight-bold" lang="en">Study abroad with the Erasmus program </div>
+                                                </label>
+                                                <div class="content">
+                                                    <p class="text-muted" lang="en">Exams taken:</p>
+                                                    
+                                                    <ul class="text-muted">
+                                                        <li lang="en">Proiectare asistată de calculator 1 [Computer aided design] 9/10</li>
+                                                        <li lang="en">Mecanica structurilor 2 [Mechanics of structures] 7/10</li>
+                                                        <li lang="en">Mecanica structurilor 1 [Mechanics of structures] 9/10</li>
+                                                        <li lang="en">Studiul formei 1 [Study of shape] 6/10</li>
+                                                        <li lang="en">Teoria arhitecturii 3 [Theory of architecture] 6/10</li>
+                                                        <li lang="en">Proiectare de arhitectură 3 [Architectural design] 5/10</li>
+                                                        <li lang="en">Construcţii 2 [Constructions] 7/10</li>
+                                                        <li lang="en">Clădiri inteligente [Smart buildings] 10/10</li>
+                                                        <li lang="en">Finisaje 1 [Finishes] 8/10</li>
+                                                        <li lang="en">Lemnul în arhitectura contemporană [Wood in contemporary architecture] 8/10</li>
+                                                        
+                                                    </ul>
+                                                    <br>
+                                                </div>
+                                                <div class="resume-degree-org text-muted" lang="en">Polytechnic University of Timișoara, Romania</div>
+                                                <div class="resume-degree-time text-muted" lang="en">September 2014 - July 2015</div>
+                                            </li>
+                                            
+                                            
+                                            <li class="mb-3">
+                                                <input type="checkbox" id="edu-school" />
+                                                <label for="edu-school">
+                                                    <div class="resume-degree font-weight-bold" lang="en">Diploma of Scientific High School </div>
+                                                </label>
+                                                <div class="content">
+                                                    <p class="text-muted" lang="en">Final grade: 96/100</p>
+                                                </div>
+                                                <div class="resume-degree-org text-muted" lang="en">Liceo Scientifico Filippo Silvestri of Portici (NA), Italy</div>
+                                                <div class="resume-degree-time text-muted" lang="en">July 2012</div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </section>
+                                    <!--//education-section-->
+                                    
+                                    
+                                    <section class="education-section py-3">
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="en">Other Courses</h3>
+                                        <ul class="list-unstyled resume-education-list">
+                                            
+                                            <li class="mb-3">
+                                                <input type="checkbox" id="edu-formezcourse" />
+                                                <label for="edu-formezcourse">
+                                                    <div class="resume-degree font-weight-bold" lang="en">Course: Skills and tools for public employee</div>
+                                                </label>
+                                                <div class="content">
+                                                    <p class="text-muted" lang="en">Training and strengthening course "skills and tools for public employee " at Formez PA - Service, assistance, studies and training center for the modernization of the Public Administration.</p>
+                                                </div>
+                                                <div class="resume-degree-org text-muted" lang="en">Formez PA, Italy</div>
+                                                <div class="resume-degree-time text-muted" lang="en">July 2020 - May 2021</div>
+                                            </li>
+                                            
+                                            <li class="mb-3">
+                                                <input type="checkbox" id="edu-safetycourse" />
+                                                <label for="edu-safetycourse">
+                                                    <div class="resume-degree font-weight-bold" lang="en">Course: Project and Construction site safety manager</div>
+                                                </label>
+                                                <div class="content">
+                                                    <p class="text-muted" lang="en">Training cycle "The Fridays of safety" relating to the figure of safety coordinator in the design phase
+                                                    (CSP) and safety coordinator in execution phase (CSE).
+                                                    Final certificate of competency issued by Training and Safety Center (CFS) in Naples.</p>
+                                                </div>
+                                                <div class="resume-degree-org text-muted" lang="en">CFS Naples, Italy</div>
+                                                <div class="resume-degree-time text-muted" lang="en">November 2019 - January 2020</div>
+                                            </li>
+                                            
+                                            <li class="mb-3">
+                                                <input type="checkbox" id="edu-3dcourse" />
+                                                <label for="edu-3dcourse">
+                                                    <div class="resume-degree font-weight-bold" lang="en">Course: Computational Design for Engineering and Architecture</div>
+                                                </label>
+                                                <div class="content">
+                                                    <p class="text-muted" lang="en">40 hour course in Parametric 3D Modeling and shaping of 3D printable models with Rhino Grasshopper, in collaboration with FabLab of "Città della Scienza" in Naples.</p>
+                                                </div>
+                                                <div class="resume-degree-org text-muted" lang="en">Federico II University of Naples, Italy</div>
+                                                <div class="resume-degree-time text-muted" lang="en">March 2017 - September 2018</div>
+                                            </li>
+                                        </ul>
+                                        
+                                    </section>
+                                    <!--//education-section-->
+                                    
+                                    
+                                </div><!--//resume-main-->
+                                <aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+                                    <section class="skills-section py-3">
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="en">Skills</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="it">Skills</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="pt">Skills</h3>
+                                        
+                                        <div class="item">
+                                            <h4 class="item-title" lang="en">Technical</h4>
+                                            <h4 class="item-title" lang="it">Technical</h4>
+                                            <h4 class="item-title" lang="pt">Technical</h4>
+                                            
+                                            <ul class="list-unstyled resume-skills-list">
+                                                <li class="mb-2" lang="en">Office and similar softwares</li>
+                                                <li class="mb-2" lang="en">CAD softwares</li>
+                                                <li class="mb-2" lang="en">BIM softwares</li>
+                                                <li class="mb-2" lang="en">Complex vectorial graphics</li>
+                                                <li class="mb-2" lang="en">Photos/Raster images manipulation</li>
+                                                <li class="mb-2" lang="en">3D Scanning/Meshing softwares</li>
+                                                <li class="mb-2" lang="en">GIS softwares</li>
+                                                <li class="mb-2" lang="en">PostgreSQL/MySQL databases</li>
+                                                <li class="mb-2" lang="en">HTML/CSS</li>
+                                                <li class="mb-2" lang="en">Object-oriented design</li>
+                                                
+                                                <li class="mb-2" lang="it">Suite Office e simili</li>
+                                                <li class="mb-2" lang="it">Programmi CAD</li>
+                                                <li class="mb-2" lang="it">Programmi BIM</li>
+                                                <li class="mb-2" lang="it">Grafica vettoriale complessa</li>
+                                                <li class="mb-2" lang="it">Manipolazione Foto/Immagini raster</li>
+                                                <li class="mb-2" lang="it">Programmi per 3D Scanning/Meshing</li>
+                                                <li class="mb-2" lang="it">Programmi GIS</li>
+                                                <li class="mb-2" lang="it">PostgreSQL/MySQL database</li>
+                                                <li class="mb-2" lang="it">HTML/CSS</li>
+                                                <li class="mb-2" lang="it">Programmazione ad oggetti</li>
+                                                
+                                                <li class="mb-2" lang="pt">Softwares de escritório e similares</li>
+                                                <li class="mb-2" lang="pt">CAD softwares</li>
+                                                <li class="mb-2" lang="pt">BIM softwares</li>
+                                                <li class="mb-2" lang="pt">Gráficos vetoriais complexos</li>
+                                                <li class="mb-2" lang="pt">Manipulação de fotos/imagens raster</li>
+                                                <li class="mb-2" lang="pt">Softwares de digitalização/malha 3D</li>
+                                                <li class="mb-2" lang="pt">GIS softwares</li>
+                                                <li class="mb-2" lang="pt">Bancos de dados PostgreSQL/MySQL</li>
+                                                <li class="mb-2" lang="pt">HTML/CSS</li>
+                                                <li class="mb-2" lang="pt">Projeto orientado a objetos</li>
+                                                
+                                            </ul>
+                                        </div><!--//item-->
+                                        
+                                        <div class="item">
+                                            <h4 class="item-title" lang="en">Professional</h4>
+                                            <h4 class="item-title" lang="it">Professionali</h4>
+                                            <h4 class="item-title" lang="pt">Professional</h4>
+                                            
+                                            <ul class="list-unstyled resume-skills-list">
+                                                <li class="mb-2" lang="en">Responsible</li>
+                                                <li class="mb-2" lang="en">Flexible</li>
+                                                <li class="mb-2" lang="en">Team player</li>
+                                                <li class="mb-2" lang="en">Problem solver</li>
+                                                <li class="mb-2" lang="en">Curious<li>
+                                                <li class="mb-2" lang="en">Open-minded<li>
+                                                <li class="mb-2" lang="en">Fast learner</li>
+                                                
+                                                <li class="mb-2" lang="it">Responsabile</li>
+                                                <li class="mb-2" lang="it">Flessibile</li>
+                                                <li class="mb-2" lang="it">Lavoratore di squadra</li>
+                                                <li class="mb-2" lang="it">Problem solver</li>
+                                                <li class="mb-2" lang="it">Curioso<li>
+                                                <li class="mb-2" lang="it">Open-minded<li>
+                                                <li class="mb-2" lang="it">Veloce ad apprendere</li>
+                                                
+                                                <li class="mb-2" lang="pt">Responsável</li>
+                                                <li class="mb-2" lang="pt">Flexível</li>
+                                                <li class="mb-2" lang="pt">Jogador da equipe</li>
+                                                <li class="mb-2" lang="pt">Solucionador de problema</li>
+                                                <li class="mb-2" lang="pt">Curioso<li>
+                                                <li class="mb-2" lang="pt">Open-minded<li>
+                                                <li class="mb-2" lang="pt">>Aprendizado rápido</li>
+                                            </ul>
+                                        </div><!--//item-->
+                                        
+                                    </section><!--//skills-section-->
+                                    <section class="education-section py-3">
+                                        <h3 class="text-uppercase resume-section-heading mb-4">Awards</h3>
+                                        <ul class="list-unstyled resume-awards-list" lang="en">
+                                            <li class="mb-3">
+                                                <div class="font-weight-bold">Formez job competition winner</div>
+                                                <div class="text-muted">Campania Region (2021)</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled resume-awards-list" lang="it">
+                                            <li class="mb-3">
+                                                <div class="font-weight-bold">Vincitore del concorso Formez</div>
+                                                <div class="text-muted">Regione Campania (2021)</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled resume-awards-list" lang="pt">
+                                            <li class="mb-3">
+                                                <div class="font-weight-bold">Vencedor do concurso de trabalho Formez</div>
+                                                <div class="text-muted">Região da Campânia (2021)</div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <!--//education-section-->
+                                    
+                                    <section class="education-section py-3">
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="en">Licences</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="it">Licences</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="pt">Licences</h3>
+                                        <ul class="list-unstyled resume-awards-list">
+                                            
+                                            <div class="item-content">
+                                                <input type="checkbox" id="licences" />
+                                                <label for="licences">
+                                                    <li class="mb-2" lang="en">Driving licences<span class="text-muted"></span></li>
+                                                    <li class="mb-2" lang="it">Patenti di guida<span class="text-muted"></span></li>
+                                                    <li class="mb-2" lang="pt">Cartas de condução<span class="text-muted"></span></li>
+                                                </label>
+                                                <div class="content">
+                                                    <ul class="text-muted" lang="en">
+                                                        <li>Category B: Cars</li>
+                                                        <li>Category A1: Light motorcycles</li>
+                                                    </ul>
+                                                    <ul class="text-muted" lang="it">
+                                                        <li>Categoria B: Automobili</li>
+                                                        <li>Categoria A1: Motocicli leggeri</li>
+                                                    </ul>
+                                                    <ul class="text-muted" lang="pt">
+                                                        <li>Categoria B: Carros</li>
+                                                        <li>Categoria A1: Motocicletas leves</li>
+                                                    </ul>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            
+                                        </ul>
+                                    </section>
+                                    <!--//education-section-->
+                                    
+                                    <section class="skills-section py-3">
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="en">Languages</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="it">Languages</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="pt">Languages</h3>
+                                        <ul class="list-unstyled resume-lang-list">
+                                            <li class="mb-2" lang="en">Italian <span class="text-muted">(Native)</span></li>
+                                            <li class="mb-2" lang="it">Italiano <span class="text-muted">(Nativo)</span></li>
+                                            <li class="mb-2" lang="pt">Italiano <span class="text-muted">(Nativo)</span></li>
+                                            
+                                            <div class="item-content">
+                                                <input type="checkbox" id="lang-en" />
+                                                <label for="lang-en">
+                                                    <li class="mb-2" lang="en">English <span class="text-muted">(Advanced)</span></li>
+                                                    <li class="mb-2" lang="it">Inglese <span class="text-muted">(Advanced)</span></li>
+                                                    <li class="mb-2" lang="pt">Inglês <span class="text-muted">(Advanced)</span></li>
+                                                </label>
+                                                <div class="content">
+                                                    <ul class="text-muted" lang="en">
+                                                        <li>Listening: C1</li>
+                                                        <li>Reading: C1</li>
+                                                        <li>Spoken interaction: C1</li>
+                                                        <li>Spoken production: B2</li>
+                                                        <li>Writing: B2</li>
+                                                    </ul>
+                                                    <ul class="text-muted" lang="it">
+                                                        <li>Ascolto: C1</li>
+                                                        <li>Lettura: C1</li>
+                                                        <li>Interazione orale: C1</li>
+                                                        <li>Produzione orale: B2</li>
+                                                        <li>Scrittura: B2</li>
+                                                    </ul>
+                                                    <ul class="text-muted" lang="pt">
+                                                        <li>Audição: C1</li>
+                                                        <li>Leitura: C1</li>
+                                                        <li>Interação falada: B2</li>
+                                                        <li>Produção falada: B2</li>
+                                                        <li>Escrita: B2</li>
+                                                    </ul>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="item-content">
+                                                <input type="checkbox" id="lang-pt" />
+                                                <label for="lang-pt">
+                                                    <li class="mb-2" lang="en">Portuguese <span class="text-muted">(Advanced)</span></li>
+                                                    <li class="mb-2" lang="it">Portoghese <span class="text-muted">(Avanzato)</span></li>
+                                                    <li class="mb-2" lang="pt">Português <span class="text-muted">(Avançado)</span></li>
+                                                </label>
+                                                <div class="content">
+                                                    <ul class="text-muted" lang="en">
+                                                        <li>Listening: C1</li>
+                                                        <li>Reading: C1</li>
+                                                        <li>Spoken interaction: C1</li>
+                                                        <li>Spoken production: B2</li>
+                                                        <li>Writing: B2</li>
+                                                        <br>
+                                                        <li class="text-muted"> 80 hour course at Brazil Consulate in Naples</li>
+                                                    </ul>
+                                                    <ul class="text-muted" lang="it">
+                                                        <li>Ascolto: C1</li>
+                                                        <li>Lettura: C1</li>
+                                                        <li>Interazione orale: C1</li>
+                                                        <li>Produzione orale: B2</li>
+                                                        <li>Scrittura: B2</li>
+                                                        <br>
+                                                        <li class="text-muted">Corso di 80 ore presso il Consolato del Brasile a Napoli</li>
+                                                    </ul>
+                                                    <ul class="text-muted" lang="pt">
+                                                        <li>Audição: C1</li>
+                                                        <li>Leitura: C1</li>
+                                                        <li>Interação falada: B2</li>
+                                                        <li>Produção falada: B2</li>
+                                                        <li>Escrita: B2</li>
+                                                        <br>
+                                                        <li class="text-muted">Curso de 80 horas no Consulado do Brasil em Nápoles</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        
+                                    </section><!--//certificates-section-->
+                                    <section class="skills-section py-3">
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="en">Interests</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="it">Interessi</h3>
+                                        <h3 class="text-uppercase resume-section-heading mb-4" lang="pt">Interests</h3>
+                                        <ul class="list-unstyled resume-interests-list mb-0">
+                                            
+                                            <li class="mb-2" lang="en">Architecture</li>
+                                            <li class="mb-2" lang="it">Architettura</li>
+                                            <li class="mb-2" lang="pt">Arquitetura</li>
+                                            
+                                            <li class="mb-2" lang="en">Technology</li>
+                                            <li class="mb-2" lang="it">Tecnologia</li>
+                                            <li class="mb-2" lang="pt">Tecnologia</li>
+
+                                            <li class="mb-2" lang="en">Computer science</li>
+                                            <li class="mb-2" lang="it">Informatica</li>
+                                            <li class="mb-2" lang="pt">Informática</li>
+                                            
+                                            <li class="mb-2" lang="en">Travels</li>
+                                            <li class="mb-2" lang="it">Viaggi</li>
+                                            <li class="mb-2" lang="pt">Viagens</li>
+                                            
+                                            <li class="mb-2" lang="en">Photography</li>
+                                            <li class="mb-2" lang="it">Fotografia</li>
+                                            <li class="mb-2" lang="pt">Fotografia</li>
+                                            
+                                            <li class="mb-2" lang="en">Languages</li>
+                                            <li class="mb-2" lang="it">Lingue</li>
+                                            <li class="mb-2" lang="pt">Línguas</li>
+                                        </ul>
+                                    </section><!--//certificates-section-->
+                                    
+                                </aside><!--//resume-aside-->
+                            </div><!--//row-->
+                        </div><!--//resume-body-->
+                        <hr>
+                        <div class="resume-footer text-center">
+                            <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+                                <li class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="https://github.com/dariovigi"><i class="fab fa-github-square fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/dariovigi</span></a></li>
+                                <li class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="https://www.linkedin.com/in/dariovigilante/"><i class="fab fa-linkedin fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/dariovigilante</span></a></li>
+                                <li class="list-inline-item mb-lg-0 me-lg-3"><a class="resume-link" href="#"><i class="fab fa-twitter-square fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">@dariovig</span></a></li>
+                            </ul>
+                        </div><!--//resume-footer-->
+                    </div><!--//container-->
+                </article>
+                
+            </div><!--//container-->
+        </div><!--//main-wrapper-->
+            
+    </body>
+</html>
+<link rel="stylesheet" href="https://cdn.statically.io/gh/mdlavin/bootstrap-carousel-standalone/292657fcb31f3c21cc7147816ab66e2191466f67/css/bootstrap.css" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdn.statically.io/gh/mdlavin/bootstrap-carousel-standalone/292657fcb31f3c21cc7147816ab66e2191466f67/js/bootstrap.js" crossorigin="anonymous"></script>
+    
+<!--    Localizzazione    -->
+    <script>
+        function select_language(language) {
+            $("[lang]").each(function () {
+                if ($(this).attr("lang") == language)
+                    $(this).show();
+                else
+                    $(this).hide();
+            });
+        }
+    </script>
