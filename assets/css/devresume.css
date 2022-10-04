@@ -151,6 +151,26 @@ select {
   -webkit-appearance: none;
 }
 
+.imgzoom {
+  margin: 100px;
+  width: 300px;
+  height: auto;
+}
+
+#imgzoom:hover .img-zoom {
+  cursor: pointer;
+  transform: scale(1.5);
+  overflow:hidden;
+}
+
+.img-zoom {
+  position: relative;
+  width: 100%;
+  transform: scale(1);
+  transition: all .2s ease;
+}
+
+
 /*[lang=en] {*/
 /*  display: unset;*/
 /*}*/
