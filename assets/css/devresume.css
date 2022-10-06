@@ -150,26 +150,70 @@ select {
   box-shadow: none;
   -webkit-appearance: none;
 }
+/**/
+/*.imgzoom {*/
+/*  margin: 100px;*/
+/*  width: 300px;*/
+/*  height: auto;*/
+/*}*/
+/**/
+/*#imgzoom:hover .img-zoom {*/
+/*  cursor: pointer;*/
+/*  transform: scale(1.5);*/
+/*  overflow:hidden;*/
+/*}*/
+/**/
+/*.img-zoom {*/
+/*  position: relative;*/
+/*  width: 100%;*/
+/*  transform: scale(1);*/
+/*  transition: all .2s ease;*/
+/*}*/
 
-.imgzoom {
-  margin: 100px;
-  width: 300px;
-  height: auto;
+  figure.zoom {
+background-position: 50% 50%;
+position: relative;
+/*margin: 150px auto;*/
+/*border: 5px solid white;*/
+/*box-shadow: -1px 5px 15px black;*/
+/*height: 50%;*/
+/*width: 50%;*/
+overflow: hidden;
+cursor: zoom-in;
+}
+figure.zoom img:active {
+opacity: 0;
+}
+figure.zoom img {
+transition: opacity 0.5s;
+display: block;
+/*height: 100%;*/
+/*width: 100%;*/
 }
 
-#imgzoom:hover .img-zoom {
-  cursor: pointer;
-  transform: scale(1.5);
-  overflow:hidden;
-}
+@media (orientation:portrait) {
+ body * {
+ visibility: hidden;
+ }
+ #section-to-print, #section-to-print * {
+ visibility: visible;
+ }
+ #section-to-print {
+ position: absolute;
 
-.img-zoom {
-  position: relative;
-  width: 100%;
-  transform: scale(1);
-  transition: all .2s ease;
+ left: 0;
+ top: 0;
+ }
 }
-
+   .my-element {
+      display: none; /* visibility: none; */
+   }
+}
+@media (orientation:landscape) and (max-width: 767px) {
+   .my-element {
+      display: none; /* visibility: none; */
+   }
+}
 
 /*[lang=en] {*/
 /*  display: unset;*/
