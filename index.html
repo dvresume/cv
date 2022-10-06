@@ -26,7 +26,7 @@
     </head>
     
     <body>
-        <div class="resume-footer text-center">
+        <div class="text-center">
             <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
                 <li onclick="window.print()" class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="#"><i class="fa-2x me-2" data-fa-transform="down-4"></i>
                     <span class="d-none d-lg-inline-block text-muted" lang="en">Print Resume</span>
@@ -58,9 +58,19 @@
                                     <div class="resume-tagline mb-3 mb-md-0" lang="en">Engineering-Architecture Student ∙ Front-End Developer</div>
                                     <div class="resume-tagline mb-3 mb-md-0" lang="it">Studente in Ingegneria-Architettura ∙ Sviluppatore Front-End</div>
                                     <div class="resume-tagline mb-3 mb-md-0" lang="pt">Estudante de Engenharia-Arquitetura ∙ Desenvolvedor Front-End</div>
+                                    
                                 </div><!--//resume-title-->
                                 <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
                                     <ul class="list-unstyled mb-0">
+                                        <li class="mb-2" id="section-lang"><i class="fas fa-language fa-fw fa-lg me-2 "></i>
+                                        <span lang="en">Show in:&nbsp;</span>
+                                        <span lang="it">Mostra in:&nbsp;</span>
+                                        <span lang="pt">Mostrar em:&nbsp;</span>
+                                        <select onchange="select_language(this.options[this.selectedIndex].value)">
+                                        <option value="en">English</option>
+                                        <option value="it">Italiano</option>
+                                        <option value="pt">Português</option>
+                                      </select></li>
                                         <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i><a class="resume-link" href="tel:#">+39 3396456131</a></li>
                                         <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="resume-link" href="mailto:#">dario.vig@gmail.com</a></li>
                                         <li class="mb-2"><i class="fas fa-globe fa-fw fa-lg me-2"></i><a class="resume-link" href="https://dariovigilante.it">www.dariovigilante.it</a></li>
@@ -319,7 +329,8 @@
                                                                 <td lang="en">Architect, Graphic Designer</td>
                                                                 <td lang="it">Architetto, Grafico</td>
                                                                 <td lang="pt">Arquiteto, Designer Gráfico</td>
-                                                                <td style="width: 10px"></td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top">
                                                                 <th lang="en">Activities:</th>
                                                                 <th lang="it">Attività svolte:</th>
                                                                 <th lang="pt">Atividades:</th>
@@ -572,9 +583,9 @@
                                         
                                         <div class="item mb-3">
                                             <div class="item-heading row align-items-center mb-2">
-                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="en">Lab:  Restoration proposals for the San Vincenzo Pier</h4>
-                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="it">Lab:  Proposte di restauro per il Molo San Vincenzo</h4>
-                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="pt">Lab:  Propostas de restauração para o Cais de San Vincenzo</h4>
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="en">Lab:  San Vincenzo pier restoration proposals</h4>
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="it">Lab:  Proposte di restauro per il molo San Vincenzo</h4>
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="pt">Lab:  Propostas de restauração para o cais de San Vincenzo</h4>
                                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="en">March 2021 - July 2021<br>Naples, Italy</div>
                                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="it">Marzo 2021 - Luglio 2021<br>Napoli, Italia</div>
                                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="pt">Março de 2021 - Julho de 2021<br>Nápoles, Itália</div>
