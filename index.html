@@ -28,15 +28,16 @@
     <body>
         <div class="resume-footer text-center">
             <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+			
                 <li onclick="window.print()" class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="#"><i class="fa-2x me-2" data-fa-transform="down-4"></i>
                     <span class="d-none d-lg-inline-block text-muted" lang="en">Print Resume</span>
 <!--                    <span class="d-none d-lg-inline-block text-muted" lang="it">Stampa Curriculum</span>-->
 <!--                    <span class="d-none d-lg-inline-block text-muted" lang="pt">Imprimir Currículo</span>-->
                 </a></li>
-                <li class="list-inline-item mb-lg-0 me-lg-3">
-                    <span lang="en" class="d-none d-lg-inline-block text-muted">Show resume in:&nbsp;</span>
-<!--                    <span lang="it" class="d-none d-lg-inline-block text-muted">Mostra il curriculum in &nbsp;</span>-->
-<!--                    <span lang="pt" class="d-none d-lg-inline-block text-muted">Mostrar curriculo em &nbsp;</span>-->
+                <li class="list-inline-item mb-lg-0 me-3">
+                    <span lang="en">Show resume in:&nbsp;</span>
+                    <span lang="it">Mostra il curriculum in:&nbsp;</span>
+                    <span lang="pt">Mostrar curriculo em:&nbsp;</span>
                     <select onchange="select_language(this.options[this.selectedIndex].value)">
                     <option value="en">English</option>
                     <option value="it">Italiano</option>
@@ -50,7 +51,7 @@
                 
                 <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
                     <div class="container" id="section-to-print" >
-                        
+
                         <div class="resume-header">
                             <div class="row align-items-center">
                                 <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
@@ -58,20 +59,21 @@
                                     <div class="resume-tagline mb-3 mb-md-0" lang="en">Engineering-Architecture Student ∙ Front-End Developer</div>
                                     <div class="resume-tagline mb-3 mb-md-0" lang="it">Studente in Ingegneria-Architettura ∙ Sviluppatore Front-End</div>
                                     <div class="resume-tagline mb-3 mb-md-0" lang="pt">Estudante de Engenharia-Arquitetura ∙ Desenvolvedor Front-End</div>
-                                </div><!--//resume-title-->
+                                </div>
+								
+								<!--//resume-title-->
                                 <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
                                     <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i><a class="resume-link" href="tel:#">+39 3396456131</a></li>
-                                        <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="resume-link" href="mailto:#">dario.vig@gmail.com</a></li>
+                                        <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i><a class="resume-link" href="tel:+393396456131">+39 3396456131</a></li>
+                                        <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="resume-link" href="mailto:dario.vig@gmail.com">dario.vig@gmail.com</a></li>
                                         <li class="mb-2"><i class="fas fa-globe fa-fw fa-lg me-2"></i><a class="resume-link" href="https://dariovigilante.it">www.dariovigilante.it</a></li>
-                                        <li class="mb-0" lang="en"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Naples, Italy</li>
-                                        <li class="mb-0" lang="it"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Napoli, Italia</li>
-                                        <li class="mb-0" lang="pt"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Nápoles, Itália</li>
+                                        <li class="mb-2" lang="en"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Naples, Italy</li>
+                                        <li class="mb-2" lang="it"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Napoli, Italia</li>
+                                        <li class="mb-2" lang="pt"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Nápoles, Itália</li>
                                     </ul>
                                 </div><!--//resume-contact-->
-                            </div><!--//row-->
-                            
-                        </div><!--//resume-header-->
+                            </div> <!--//row-->   
+                        </div> <!--//resume-header-->
                         <hr>
                         <div class="resume-intro py-3">
                             <div class="row align-items-center">
@@ -80,15 +82,25 @@
                                 </div>
                                 
                                 <div class="col text-start">
-                                    <p class="mb-0" lang="en">Hi I'm Dario Vigilante, a student at Federico II of Naples graduating in Engineering-Architecture and employee at Municipality of Naples with a solid passion in Technology and Computer science who recently started the Developer path.
+								<p class="mb-2" id="section-to-not-print">
+						<span lang="en">Show in:&nbsp;</span>
+                        <span lang="it">Mostra in:&nbsp;</span>
+                        <span lang="pt">Mostrar em:&nbsp;</span>
+                        <select onchange="select_language(this.options[this.selectedIndex].value)">
+                        <option value="en">English</option>
+                        <option value="it">Italiano</option>
+                        <option value="pt">Português</option>
+                        </select>
+						</p>
+                                    <p class="mb-0" lang="en">Student at Federico II of Naples graduating in Engineering-Architecture <!-- and employee at Municipality of Naples -->with a solid passion in Technology and Computer science who recently started the Developer path.
 <!--                                    I would just define myself as a curious  and open-minded guy passionated about different subjects and cultures with a craving desire to learn new things.-->
                                     If you are looking for a person who has no problem working in a multicultural team, loves to study and stay up to date, really into analyzing problems and always in search for possible solutions, I'm the person you want in your team.<br>
 
-                                    <p class="mb-0" lang="it">Ciao sono Dario Vigilante, uno studente laureando in Ingegneria-Architettura presso la Federico II di Napoli e dipendente del Comune di Napoli con una grande passione per la Tecnologia e l'Informatica che da poco ha iniziato il percorso di Sviluppatore.
+                                    <p class="mb-0" lang="it">Studente laureando in Ingegneria-Architettura presso la Federico II di Napoli <!-- e dipendente del Comune di Napoli -->con una grande passione per la Tecnologia e l'Informatica che da poco ha iniziato il percorso di Sviluppatore.
 <!--                                    Mi definirei semplicemente un ragazzo curioso e dalla mentalità aperta, appassionato di materie e culture diverse con una grande voglia di imparare cose nuove.-->
                                     Se siete alla ricerca di una persona che non abbia problemi a lavorare in un team multiculturale, ami studiare e tenersi aggiornato, interessato dall'analisi dei problemi e sempre alla ricerca di possibili soluzioni, sono la persona che desiderate nel vostro team.<br>
 
-                                    <p class="mb-0" lang="pt">Olá sou Dario Vigilante, um estudante de Engenharia-Arquitetura a estudar atualmente na Federico II de Nápoles e a trabalhar no município de Nápoles com uma sólida paixão em Tecnologia e Ciência da Computação que recentemente iniciou o caminho de Desenvolvedor.
+                                    <p class="mb-0" lang="pt">Estudante de Engenharia-Arquitetura a estudar atualmente na Federico II de Nápoles <!-- e a trabalhar no município de Nápoles  -->com uma sólida paixão em Tecnologia e Ciência da Computação que recentemente iniciou o caminho de Desenvolvedor.
 <!--                                    Eu apenas me definiria como um rapaz curioso e com mente aberta, apaixonado por diferentes assuntos e culturas com um forte desejo de aprender coisas novas.-->
                                     Se estão à procura de uma pessoa sem problemas em trabalhar numa equipa multicultural,que goste de estudar e se manter atualizado, realmente focado em analisar problemas e sempre em busca de possíveis soluções, eu sou a pessoa que procuram.<br>
                                     
@@ -172,11 +184,11 @@
                                                         <p lang="pt">Projeto Moovit para mapeamento da rede de transporte público local na região Campânia. </p>
                                                     </label>
                                                     <div class="content">
-                                                        <ul class="resume-list">
-                                                        <p lang="en">Workshop organized by Moovit in collaboration with TeMALab,
-                                                        Territory, Mobility and Environment Laboratory and the Department of Civil, Construction and Environmental Engineering of Federico II University for mapping the local public transport networks in Campania region.</p>
-                                                        <p lang="it">Workshop organizzato da Moovit in collaborazione con TeMALab, Laboratorio Territorio Mobilità e Ambiente e Dipartimento di Ingegneria Civile, Edile e Ambientale dell'Università Federico II per la mappatura delle reti di trasporto pubblico locale in Campania.</p>
-                                                        <p lang="pt">Workshop organizado pelo Moovit em colaboração com o TeMALab, Laboratório de Território, Mobilidade e Ambiente e o Departamento de Engenharia Civil, Construção e Ambiente da Universidade Federico II para o mapeamento das redes locais de transporte público na região da Campânia.</p>
+<!--                                                         <ul class="resume-list"> -->
+                                                        <li lang="en">Workshop organized by Moovit in collaboration with TeMALab,
+                                                        Territory, Mobility and Environment Laboratory and the Department of Civil, Construction and Environmental Engineering of Federico II University for mapping the local public transport networks in Campania region.</li>
+                                                        <li lang="it">Workshop organizzato da Moovit in collaborazione con TeMALab, Laboratorio Territorio Mobilità e Ambiente e Dipartimento di Ingegneria Civile, Edile e Ambientale dell'Università Federico II per la mappatura delle reti di trasporto pubblico locale in Campania.</li>
+                                                        <li lang="pt">Workshop organizado pelo Moovit em colaboração com o TeMALab, Laboratório de Território, Mobilidade e Ambiente e o Departamento de Engenharia Civil, Construção e Ambiente da Universidade Federico II para o mapeamento das redes locais de transporte público na região da Campânia.</li>
                                                         <br>
                                                         <div id="carousel-moovit" class="carousel slide" data-ride="false" data-interval="5000">
                                                             <!-- Indicators -->
@@ -238,7 +250,7 @@
                                                               </tr>
                                                             </tbody>
                                                           </table>
-                                                        </ul>
+<!--                                                         </ul> -->
                                                     </div>
                                                 </div>
                                             </div><!--//item-->
@@ -260,11 +272,11 @@
                                                         <p lang="pt">Concurso de design "O Anfiteatro de Alvenaria" no Município de Nola.</p>
                                                     </label>
                                                     <div class="content">
-                                                        <ul class="resume-list">
-                                                        <p lang="en">Workshop organized by the Municipality of Nola from 28 to 31 May, with presentation
-                                                        of design proposals for the redevelopment of the Roman amphitheater and the area surrounding the "Foro Boario".</p>
-                                                        <p lang="it">Workshop organizzato dal Comune di Nola dal 28 al 31 maggio, con presentazione di proposte progettuali per la riqualificazione dell'anfiteatro Romano e dell'area circostante il "Foro Boario".</p>
-                                                        <p lang="pt">Workshop organizado pela Câmara Municipal de Nola de 28 a 31 de maio, com apresentação de propostas de projeto para a requalificação do anfiteatro Romano e da área envolvente ao "Foro Boario".</p>
+<!--                                                         <ul class="resume-list"> -->
+                                                        <li lang="en">Workshop organized by the Municipality of Nola from 28 to 31 May, with presentation
+                                                        of design proposals for the redevelopment of the Roman amphitheater and the area surrounding the "Foro Boario".</li>
+                                                        <li lang="it">Workshop organizzato dal Comune di Nola dal 28 al 31 maggio, con presentazione di proposte progettuali per la riqualificazione dell'anfiteatro Romano e dell'area circostante il "Foro Boario".</li>
+                                                        <li lang="pt">Workshop organizado pela Câmara Municipal de Nola de 28 a 31 de maio, com apresentação de propostas de projeto para a requalificação do anfiteatro Romano e da área envolvente ao "Foro Boario".</li>
                                                         <br>
                                                         <div id="carousel-amphi" class="carousel slide" data-ride="false" data-interval="5000">
                                                             <!-- Indicators -->
@@ -323,13 +335,13 @@
                                                                 <th lang="en">Activities:</th>
                                                                 <th lang="it">Attività svolte:</th>
                                                                 <th lang="pt">Atividades:</th>
-                                                                <td lang="en">Realizzazione sopralluoghi, rilievo e campagna fotografica della zona dell'anfiteatro, Analisi storica, studio del contesto morfologico, ideazione di proposte progettuali compatibili con l'area e realizzazione delle tavole con l'utilizzo di Archicad, Autocad e render con Lumion.</td>
-                                                                <td lang="it">Realization of inspections, survey and photographic campaign of the area of ​​the amphitheater, historical analysis, study of the morphological context, creation of project proposals compatible with the area and realization of the posters with the use of Archicad, Autocad and render with Lumion. </td>
-                                                                <td lang="pt">Realização de visitas de inspeção, levantamento e campanha fotográfica da área do anfiteatro, análise histórica, estudo do contexto morfológico, criação de propostas de projetos compatíveis com a área e realização dos cartazes com uso de Archicad, Autocad e render com Lumion. </td> </td>
+                                                                <td lang="en">Realizzazione sopralluoghi, Rilievo e campagna fotografica, Analisi storica, studio del contesto morfologico, Ideazione proposte progettuali compatibili, Realizzazione delle tavole con Archicad, Autocad e render con Lumion.</td>
+                                                                <td lang="it">Realization of inspections, Survey and photographic campaign, Historical analysis, Study of the morphological context, Ideation of compatible project proposals, Realization of posters with Archicad, Autocad and render with Lumion.</td>
+                                                                <td lang="pt">Realização de visitas de inspeção, Levantamento e campanha fotográfica, Análise histórica, Estudo do contexto morfológico, Criação de propostas de projetos compatíveis, Realização dos cartazes com Archicad, Autocad e render com Lumion.</td> </td>
                                                               </tr>
                                                             </tbody>
                                                           </table>
-                                                        </ul>
+<!--                                                         </ul> -->
                                                     </div>
                                                 </div>
                                             </div><!--//item-->
@@ -360,10 +372,10 @@
                                                     <p lang="pt">Aplicativo iOS usando a câmera truedepth do iPhone para a digitalização 3D do ambiente para ajudar invisuais e parcialmente invisuais a identificar obstáculos.</p>
                                                 </label>
                                                 <div class="content">
-                                                    <ul class="resume-list">
-                                                        <li lang="en">App realized during MC-Final Challenge at Apple Developer Academy, using the iPhone's truedepth camera for 3D scanning of the environment to help blind and visually impaired to identify obstacles, giving them an extra-tool to walk autonomously.</li>
-                                                        <li lang="it">App realizzata durante l'MC-Final Challenge presso l'Apple Developer Academy che utilizza la fotocamera Truedepth dell'iPhone per la scansione 3D dell'ambiente per aiutare non vedenti e ipovedenti a identificare gli ostacoli, fornendo loro uno strumento in più per camminare autonomamente.</li>
-                                                        <li lang="pt">Aplicativo realizado durante a Challenge final na Apple Developer Academy, usando a câmera truedepth do iPhone para a digitalização 3D do ambiente para ajudar invisuais e parcialmente invisuais a identificar obstáculos, dando-lhes uma ferramenta extra para caminhar de forma autónoma.</li>
+<!--                                                     <ul class="resume-list"> -->
+                                                        <li lang="en">App realized during MC-Final Challenge at Apple Developer Academy, using the iPhone's truedepth camera for 3D scanning of the environment to help blind and visually impaired to identify obstacles, giving them an extra-tool to walk autonomously.<br><br>Published on App Store:&nbsp<a href="https://apps.apple.com/en/app/trusteppy/id1627700224" target="_blank">TruSteppy</a></li>
+                                                        <li lang="it">App realizzata durante l'MC-Final Challenge presso l'Apple Developer Academy che utilizza la fotocamera Truedepth dell'iPhone per la scansione 3D dell'ambiente per aiutare non vedenti e ipovedenti a identificare gli ostacoli, fornendo loro uno strumento in più per camminare autonomamente.<br><br>Pubblicata su App Store:&nbsp<a href="https://apps.apple.com/it/app/trusteppy/id1627700224" target="_blank">TruSteppy</a></li>
+                                                        <li lang="pt">Aplicativo realizado durante a Challenge final na Apple Developer Academy, usando a câmera truedepth do iPhone para a digitalização 3D do ambiente para ajudar invisuais e parcialmente invisuais a identificar obstáculos, dando-lhes uma ferramenta extra para caminhar de forma autónoma.<br><br>Publicado na App Store:&nbsp<a href="https://apps.apple.com/pt/app/trusteppy/id1627700224" target="_blank">TruSteppy</a></li>
                                                         <br>
                                                         <div id="carousel-1" class="carousel slide" data-ride="false" data-interval="5000">
                                                             <!-- Indicators -->
@@ -382,7 +394,12 @@
                                                                 <div class="item"><img class="d-block w-100" src="files/trusteppy/slide_2.png" alt="Third slide"></div>
                                                                 <div class="item"><img class="d-block w-100" src="files/trusteppy/slide_3.png" alt="Fourth slide"></div>
                                                                 <div class="item"><img class="d-block w-100" src="files/trusteppy/slide_4.png" alt="Fifth slide"></div>
-                                                                <div class="item"><img class="d-block w-100" src="files/trusteppy/slide_5.png" alt="Sixth slide"></div>
+                                                                <div class="item"><img class="d-block w-100" src="files/trusteppy/slide_5.png" alt="Sixth slide">
+																<a href="https://apps.apple.com/en/app/trusteppy/id1627700224" target="_blank"><div class="carousel-caption">
+                                                                <p lang="en">Final presentation: Trusteppy</p>
+                                                                <p lang="it">Presentazione finale: Trusteppy</p>
+                                                                <p lang="pt">Apresentação final: Trusteppy</p>
+                                                               </div></a></div>
                                                             </div>
                                                             <!-- Controls -->
                                                             <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
@@ -412,7 +429,7 @@
                                                               </tr>
                                                             </tbody>
                                                           </table>
-                                                    </ul>
+<!--                                                     </ul> -->
                                                 </div>
                                             </div>
                                         </div><!--//item-->
@@ -433,7 +450,7 @@
                                                     
                                                 </label>
                                                 <div class="content">
-                                                    <ul class="resume-list">
+<!--                                                     <ul class="resume-list"> -->
                                                         <li lang="en">App realized during MC2-MC3-Callenges at Apple Developer Academy to help beginner photographers to achieve their goals by exploring new methods and techniques about the world of photography, discovering courses and diving into exciting challenges.</li>
                                                         <li lang="it">App realizzata durante le Challenge MC2 ed MC3 presso l'Apple Developer Academy per aiutare i fotografi principianti a raggiungere i loro obiettivi e ad esplorare il mondo della fotografia, scoprendo nuove tecniche e tuffandosi in sfide entusiasmanti.</li>
                                                         <li lang="pt">App realizado durante as Challenges MC2-MC3 na Apple Developer Academy para ajudar fotógrafos iniciantes a atingir seus objetivos explorando novos métodos e técnicas sobre o mundo da fotografia, descobrindo cursos e mergulhando em desafios emocionantes.</li>
@@ -485,7 +502,7 @@
                                                               </tr>
                                                             </tbody>
                                                           </table>
-                                                    </ul>
+<!--                                                     </ul> -->
                                                 </div>
                                             </div>
                                             
@@ -507,7 +524,7 @@
                                                     <p lang="pt">Aplicativo iOS para ajudar crianças com autismo ou doenças da comunicação a comunicar seus próprios sentimentos e necessidades usando uma ferramenta específica baseada no método PECS.</p>
                                                 </label>
                                                 <div class="content">
-                                                    <ul class="resume-list">
+<!--                                                     <ul class="resume-list"> -->
                                                         <li lang="en">App realized during MC1-Callenge at Apple Developer Academy that provides a way for students with autism or communication diseases to be able to understand or express their own feelings and necessities by using a specific tool based on the Picture Exchange Communication System (PECS), an augmentative and alternative communication (AAC) system that uses visual symbols to teach the learner to communicate with other individuals.</li>
                                                         <li lang="it">App realizzata durante la Challenge MC1 presso l'Apple Developer Academy che offre agli studenti con autismo o disturbi della comunicazione un modo per comprendere o esprimere i propri sentimenti e necessità utilizzando uno strumento specifico basato sul Picture Exchange Communication System (PECS), un Sistema di comunicazione aumentativa e alternativa (CAA) che utilizza simboli visivi per insegnare allo studente a comunicare con altri individui.</li>
                                                         <li lang="pt">App realizado durante a Challenge MC1 na Apple Developer Academy que oferece aos alunos com autismo ou doenças da comunicação uma forma de entender ou expressar seus próprios sentimentos e necessidades usando uma ferramenta específica baseada no Picture Exchange Communication System (PECS), um Sistema de comunicação aumentativa e alternativa (AAC) que usa símbolos visuais para ensinar o aluno a se comunicar com outros indivíduos.</li>
@@ -564,7 +581,7 @@
                                                             </tr>
                                                           </tbody>
                                                         </table>
-                                                    </ul>
+<!--                                                     </ul> -->
                                                 </div>
                                             </div>
                                         </div><!--//item-->
@@ -572,9 +589,9 @@
                                         
                                         <div class="item mb-3">
                                             <div class="item-heading row align-items-center mb-2">
-                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="en">Lab:  Restoration proposals for the San Vincenzo Pier</h4>
-                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="it">Lab:  Proposte di restauro per il Molo San Vincenzo</h4>
-                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="pt">Lab:  Propostas de restauração para o Cais de San Vincenzo</h4>
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="en">Lab:  Restoration proposals for the San Vincenzo pier</h4>
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="it">Lab:  Proposte di restauro per il molo San Vincenzo</h4>
+                                                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" lang="pt">Lab:  Propostas de restauração para o cais de San Vincenzo</h4>
                                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="en">March 2021 - July 2021<br>Naples, Italy</div>
                                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="it">Marzo 2021 - Luglio 2021<br>Napoli, Italia</div>
                                                 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" lang="pt">Março de 2021 - Julho de 2021<br>Nápoles, Itália</div>
@@ -582,14 +599,14 @@
                                             <div class="item-content">
                                                 <input type="checkbox" id="ws-molo_en" />
                                                 <label for="ws-molo_en">
-                                                    <p lang="en">Restoration Lab with design proposal for the redevelopment of the S. Vincenzo pier with the Professor Arch. Renata Picone, University of Naples "Federico II".</p>
-                                                    <p lang="it">Laboratorio di Restauro Architettonico con proposta progettuale per la riqualificazione per il molo S. Vincenzo con la Professoressa Arch. Renata Picone, Università degli Studi di Napoli “Federico II”.</p>
-                                                    <p lang="pt">Laboratório de Restauração com proposta de projeto pela requalificação do cais de S. Vincenzo com a Professora Arq. Renata Picone, Universidade de Nápoles "Federico II".</p>
+                                                    <p lang="en">Restoration Lab with design proposal for the redevelopment of the S. Vincenzo pier with the University of Naples "Federico II".</p>
+                                                    <p lang="it">Laboratorio di Restauro Architettonico con proposta progettuale per la riqualificazione per il molo S. Vincenzo con l' Università degli Studi di Napoli “Federico II”.</p>
+                                                    <p lang="pt">Laboratório de Restauração com proposta de projeto pela requalificação do cais de S. Vincenzo com a Universidade de Nápoles "Federico II".</p>
                                                 </label>
                                                 <div class="content">
-                                                    <p lang="en">Architectural Restoration Lab and Exam with design proposal by redevelopment for the S. Vincenzo pier with the Professor Arch. Renata Picone, Full Professor of Restoration e Director of the School of Specialization in Architectural Heritage and Landscape of the University of Naples "Federico II".</p>
-                                                    <p lang="it">Laboratorio ed Esame di Restauro Architettonico con proposta progettuale di riqualificazione per il molo S. Vincenzo sostenuto a pieni voti con la Professoressa Arch. Renata Picone, Professore Ordinario di Restauro e Direttore della Scuola di Specializzazione in Beni Architettonici e del Paesaggio dell’Università degli Studi di Napoli “Federico II”.</p>
-                                                    <p lang="pt">Laboratório e exame de Restauração Arquitetônica com proposta de projeto pela requalificação do cais de S. Vincenzo com a Professora Arq. Renata Picone, Professora Titular de Restauração e Diretor da Escola de Especialização em Patrimônio Arquitetônico e do Paisagem da Universidade de Nápoles "Federico II".</p>
+                                                    <li lang="en">Architectural Restoration Lab and Exam with design proposal by redevelopment for the S. Vincenzo pier with the Professor Arch. Renata Picone, Full Professor of Restoration e Director of the School of Specialization in Architectural Heritage and Landscape of the University of Naples "Federico II".</li>
+                                                    <li lang="it">Laboratorio ed Esame di Restauro Architettonico con proposta progettuale di riqualificazione per il molo S. Vincenzo sostenuto a pieni voti con la Professoressa Arch. Renata Picone, Professore Ordinario di Restauro e Direttore della Scuola di Specializzazione in Beni Architettonici e del Paesaggio dell’Università degli Studi di Napoli “Federico II”.</li>
+                                                    <li lang="pt">Laboratório e exame de Restauração Arquitetônica com proposta de projeto pela requalificação do cais de S. Vincenzo com a Professora Arq. Renata Picone, Professora Titular de Restauração e Diretor da Escola de Especialização em Patrimônio Arquitetônico e do Paisagem da Universidade de Nápoles "Federico II".</li>
                                                     <br>
                                                     <div id="carousel-molo" class="carousel slide" data-ride="false" data-interval="5000">
                                                         <!-- Indicators -->
@@ -687,7 +704,7 @@
                                                           </tr>
                                                         </tbody>
                                                       </table>
-                                                    </ul>
+<!--                                                     </ul> -->
                                                 </div>
                                             </div>
                                         </div><!--//item-->
@@ -850,23 +867,23 @@
                                                                 <a href="https://twitter.com/tim_cook/status/1575540198481399808?s=46&t=wx4H18qmCucHgikUZQMTWg" target="_blank"><div class="carousel-caption">
                                                                     <p lang="en">Source: Tim Cook official Twitter page</p>
                                                                     <p lang="it">Fonte: Pagina Twitter ufficiale di Tim Cook</p>
-                                                                    <p lang="pt">Fonte: Página oficial do Twitter de Tim Cook</p>
+                                                                    <p lang="pt">Fonte: Página oficial do Twitter do Tim Cook</p>
                                                                 </div></a>
                                                             </div>
                                                             <div class="item"><img  class="d-block w-100" style="background-color: #ebebeb; aspect-ratio: 16 / 9; object-fit: contain;" src="files/academy/slide_3.png" alt="Fourth slide">
-                                                               <div class="carousel-caption">
+                                                               <a href="https://apps.apple.com/en/app/trusteppy/id1627700224" target="_blank"><div class="carousel-caption">
                                                                 <p lang="en">Final presentation: Trusteppy</p>
                                                                 <p lang="it">Presentazione finale: Trusteppy</p>
-                                                                <p lang="pt">*****</p>
-                                                               </div>
+                                                                <p lang="pt">Apresentação final: Trusteppy</p>
+                                                               </div></a>
                                                             </div>
                                                             <div class="item"><video autoplay loop muted inline class="d-block w-100" style="background-color: #ebebeb; aspect-ratio: 16 / 9; object-fit: contain;" src="files/academy/slide_4.mp4" type="video/mp4" alt="Third slide">
                                                             </div>
                                                             <div class="item"><img  class="d-block w-100" style="background-color: #ebebeb; aspect-ratio: 16 / 9; object-fit: contain;" src="files/academy/slide_5.png" alt="Sixt slide">
                                                                 <a href="#" target="_blank"><div class="carousel-caption">
-                                                                    <p lang="en">Graduation day!</p>
-                                                                    <p lang="it">Diplomati!</p>
-                                                                    <p lang="pt">Dia do diploma!</p>
+                                                                    <p lang="en">Last day: Graduation ceremony!</p>
+                                                                    <p lang="it">Ultimo giorno: cerimonia di diploma!</p>
+                                                                    <p lang="pt">Último dia: Formatura!</p>
                                                                 </div></a>
                                                             </div>
                                                             <div class="item"><img  class="d-block w-100" style="background-color: #ebebeb; aspect-ratio: 16 / 9; object-fit: contain;" src="files/academy/slide_6.png" alt="Sixt slide">
