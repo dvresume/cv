@@ -84,14 +84,14 @@ zoom: 75%
  #section-to-print, #section-to-print * {
  visibility: visible;
  }
- #section-to-not-print, #section-to-not-print * {
- visibility: hidden;
- }
  #section-to-print {
  position: absolute;
 
  left: 0;
  top: 0;
+ }
+ #section-to-not-print, #section-to-not-print * {
+ visibility: hidden !important;
  }
 }
 
@@ -205,11 +205,12 @@ display: block;
  #section-to-print, #section-to-print * {
  visibility: visible;
  }
-/*  #section-to-print {
+ #section-to-print {
  position: absolute;
+ border: 20px solid #FFF;
  left: 0;
  top: 0;
- } */
+ }
 }
    .my-element {
       display: none; /* visibility: none; */
