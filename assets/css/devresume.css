@@ -133,13 +133,13 @@ img {
 }
 
 
-[lang=it] {
-  display: none;
-}
-
-[lang=pt] {
-  display: none;
-}
+/*[lang=it] {*/
+/*  display: none;*/
+/*}*/
+/**/
+/*[lang=pt] {*/
+/*  display: none;*/
+/*}*/
 
 select {
   color: #7AB58A;

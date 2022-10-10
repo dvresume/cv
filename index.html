@@ -22,7 +22,19 @@
                                         
                                 <!-- Collapsible -->
                             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-                                            
+                                
+                                <!--    Localizzazione di default   -->
+                                        <script>
+                                          window.onload = function() {
+                                              if (navigator.language == "en" || navigator.language == "it")
+                                              select_language(navigator.language)
+                                              else if (navigator.language == "pt-PT" || navigator.language == "pt-BR")
+                                              select_language("pt")
+                                              else
+                                              select_language("en")
+                                          };
+                                        </script>
+    
     </head>
     
     <body>
@@ -88,6 +100,9 @@
                         <span lang="it">Mostra Portfolio in:&nbsp;</span>
                         <span lang="pt">Mostrar Portfolio em:&nbsp;</span>
                         <select onchange="select_language(this.options[this.selectedIndex].value)">
+
+                        <option disabled selected value style="display:none">   - select an option - </option>
+                        
                         <option value="en">English</option>
                         <option value="it">Italiano</option>
                         <option value="pt">Português</option>
@@ -1346,7 +1361,8 @@
                 
             </div><!--//container-->
         </div><!--//main-wrapper-->
-            
+        
+        
     </body>
 </html>
 <link rel="stylesheet" href="https://cdn.statically.io/gh/mdlavin/bootstrap-carousel-standalone/292657fcb31f3c21cc7147816ab66e2191466f67/css/bootstrap.css" crossorigin="anonymous">
