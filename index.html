@@ -11,6 +11,17 @@
                         <meta name="author" content="Dario Vigilante">
                             <link rel="shortcut icon" href="favicon.ico">
                                 
+                                <!--           Localizzazione di default   -->
+                                                <script>
+                                                  window.onload = function() {
+                                                      if (navigator.language == "en" || navigator.language == "it")
+                                                      select_language(navigator.language)
+                                                      else if (navigator.language == "pt-PT" || navigator.language == "pt-BR")
+                                                      select_language("pt")
+                                                      else
+                                                      select_language("en")
+                                                  };
+                                                </script> 
                                 <!-- Google Fonts -->
                             <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
                                     
@@ -28,17 +39,6 @@
     
     <body>
         
-<!--           Localizzazione di default   -->
-                <script>
-                  window.onload = function() {
-                      if (navigator.language == "en" || navigator.language == "it")
-                      select_language(navigator.language)
-                      else if (navigator.language == "pt-PT" || navigator.language == "pt-BR")
-                      select_language("pt")
-                      else
-                      select_language("en")
-                  };
-                </script>
         
 <!--        <div class="resume-footer text-center">-->
 <!--            <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">-->
