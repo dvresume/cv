@@ -133,6 +133,17 @@ img {
 }
 
 
+[lang] {
+  display: none;
+}
+
+
+/*[lang="en"] {*/
+/*  display: initial!important;*/
+/*}*/
+
+
+
 /*[lang=it] {*/
 /*  display: none;*/
 /*}*/
