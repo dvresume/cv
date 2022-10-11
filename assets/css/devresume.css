@@ -138,9 +138,9 @@ img {
 }
 
 
-/*[lang="en"] {*/
-/*  display: initial!important;*/
-/*}*/
+[lang="en"] {
+  display: initial;
+}
 
 
 
