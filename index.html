@@ -23,21 +23,21 @@
                                 <!-- Collapsible -->
                             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
                                 
-                                <!--    Localizzazione di default   -->
-                                        <script>
-                                          window.onload = function() {
-                                              if (navigator.language == "en" || navigator.language == "it")
-                                              select_language(navigator.language)
-                                              else if (navigator.language == "pt-PT" || navigator.language == "pt-BR")
-                                              select_language("pt")
-                                              else
-                                              select_language("en")
-                                          };
-                                        </script>
     
     </head>
     
     <body>
+        <!--    Localizzazione di default   -->
+                <script>
+                  window.onload = function() {
+                      if (navigator.language == "en" || navigator.language == "it")
+                      select_language(navigator.language)
+                      else if (navigator.language == "pt-PT" || navigator.language == "pt-BR")
+                      select_language("pt")
+                      else
+                      select_language("en")
+                  };
+                </script>
         
 <!--        <div class="resume-footer text-center">-->
 <!--            <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">-->
@@ -102,7 +102,6 @@
                         <select onchange="select_language(this.options[this.selectedIndex].value)">
 
                         <option disabled selected value style="display:none"> ∙ select an option ∙ </option>
-                        
                         <option value="en">English</option>
                         <option value="it">Italiano</option>
                         <option value="pt">Português</option>
