@@ -133,24 +133,24 @@ img {
 }
 
 
-[lang] {
-  display: none;
-}
-
-
-/*[lang="en"] {*/
-/*  display: initial;*/
-/*}*/
-
-
-
-/*[lang=it] {*/
+/*[lang] {*/
 /*  display: none;*/
 /*}*/
 /**/
-/*[lang=pt] {*/
-/*  display: none;*/
+/**/
+/*[lang="en"] {*/
+/*visibility: visible;*/
 /*}*/
+
+
+
+[lang=it] {
+  display: none;
+}
+
+[lang=pt] {
+  display: none;
+}
 
 
 select {
